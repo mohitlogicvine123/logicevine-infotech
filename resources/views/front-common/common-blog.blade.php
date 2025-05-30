@@ -45,7 +45,7 @@
                                         <p class="md:mt-2.5 mt-2 md:text-[15px] text-[14px] text-gray-800 md:leading-[25px] leading-[23px] line-clamp-3">
                                             {{ Str::limit($blog->description, 150) }}
                                         </p>
-                                        <a href="#" title="" class="flex items-center justify-between pb-1 md:mt-3 mt-2.5 md:pt-3 pt-2.5 max-sm:text-[14px] border-t text-base font-medium text-gray-900 transition-all duration-500 hover:text-yellow-500">
+                                        <a href="{{route('web.blogdeatils',$blog->id)}}" title="" class="flex items-center justify-between pb-1 md:mt-3 mt-2.5 md:pt-3 pt-2.5 max-sm:text-[14px] border-t text-base font-medium text-gray-900 transition-all duration-500 hover:text-yellow-500">
                                             Continue Reading
                                             <svg class="size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />

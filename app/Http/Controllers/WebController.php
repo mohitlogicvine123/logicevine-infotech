@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\Career;
+use App\Models\Gallery;
 use App\Models\Industries;
 use Illuminate\Http\Request;
 
@@ -25,7 +26,8 @@ class WebController extends Controller
     }
 
     public function gallery() {
-        return view('gallery');
+        $image= Gallery::all(); // get gallery in front end
+        return view('gallery',compact('image'));
     }
 
     public function bloglist() {
@@ -34,7 +36,8 @@ class WebController extends Controller
     }
 
     public function blogdeatils() {
-        return view('blog-deatil');
+        $data= Blog::all(); // get blogdetails page in front end 
+        return view('blog-detail',compact('data'));
     }
 
     public function contact() {

@@ -174,6 +174,10 @@
                 <img src="{{asset('assets/gallery/holi/holi-celebration-13.webp')}}" alt="Holi 2" class="size-full object-cover" />
                 <div class="overlay">Holi Celebration</div>
             </a>
+
+
+
+
             </div>
         </div>
     </section>
