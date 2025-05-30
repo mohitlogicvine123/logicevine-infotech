@@ -1,3 +1,7 @@
+@extends('front-layouts.main')
+@section('title', 'Expert Web Development & Tech Blogs - Logicvine')
+@section('content')
+
 <section class="bg-gray-100/80 lg:pb-16 md:pb-14 pb-10 pt-6">
     <div class="container xl:px-[18px] md:px-4 px-3.5 mx-auto">
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-9">
@@ -109,3 +113,4 @@
         </div>
     </div>
 </section>
+@endsection

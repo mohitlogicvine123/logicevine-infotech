@@ -24,7 +24,7 @@
                     <ul class="lg:flex gap-8 hidden">
                         <li class="group py-6">
                             <a href="{{ route('web.index') }}"
-                                class="flex items-center text-[15px] font-medium text-black relative 
+                                class="flex items-center text-[15px] font-medium text-black relative
                                 before:absolute before:border-b-2 before:border-theme2 focus:text-theme2 active:text-theme2
                                 before:size-full before:-translate-x-full overflow-hidden hover:before:translate-x-0 before:duration-300
                                 hover:text-theme2 {{ Route::currentRouteName() == 'web.index' ? '!text-theme2' : '' }}">
@@ -107,7 +107,7 @@
                         </li>
                         <li class="group py-6">
                             <a href="{{ route('web.blog') }}"
-                                class="flex items-center text-[15px] font-medium 2xl:text-base duration-300 3xl:text-lg text-black relative 
+                                class="flex items-center text-[15px] font-medium 2xl:text-base duration-300 3xl:text-lg text-black relative
                                 before:absolute before:border-b-2 before:border-theme2 focus:text-theme2 active:text-theme2
                                 before:size-full before:-translate-x-full overflow-hidden hover:before:translate-x-0 before:duration-300
                                 hover:text-theme2 {{ Route::currentRouteName() == 'web.blog' ? '!text-theme2' : '' }}">
@@ -116,7 +116,7 @@
                         </li>
                         <li class="group py-6">
                             <a href="{{ route('web.carrier') }}"
-                                class="flex items-center text-[15px] font-medium 2xl:text-base duration-300 3xl:text-lg text-black relative 
+                                class="flex items-center text-[15px] font-medium 2xl:text-base duration-300 3xl:text-lg text-black relative
                                 before:absolute before:border-b-2 before:border-theme2 focus:text-theme2 active:text-theme2
                                 before:size-full before:-translate-x-full overflow-hidden hover:before:translate-x-0 before:duration-300
                                 hover:text-theme2 {{ Route::currentRouteName() == 'web.carrier' ? '!text-theme2' : '' }}">
@@ -126,7 +126,7 @@
                         </li>
                         <li class="group py-6">
                             <a href="{{ route('web.contact-us') }}"
-                                class="flex items-center text-[15px] font-medium 2xl:text-base 3xl:text-lg duration-300 text-black relative 
+                                class="flex items-center text-[15px] font-medium 2xl:text-base 3xl:text-lg duration-300 text-black relative
                                 before:absolute before:border-b-2 before:border-theme2 focus:text-theme2 active:text-theme2
                                 before:size-full before:-translate-x-full overflow-hidden hover:before:translate-x-0 before:duration-300
                                 hover:text-theme2 {{ Route::currentRouteName() == 'web.contact-us' ? '!text-theme2' : '' }}">

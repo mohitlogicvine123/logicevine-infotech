@@ -15,92 +15,46 @@
             </p>
         </div>
         <div class="md:mt-6 mt-4">
-            <div class="swiper-container bloghome swiper md:pb-5 pb-4">
+             <div class="swiper-container bloghome swiper md:pb-5 pb-4">
                 <div class="swiper-wrapper flex items-stretch">
-                    <div class="swiper-slide !h-auto">
-                        <div class="overflow-hidden bg-white rounded-[8px] shadow-lg h-full sm:p-2 p-1.5 border">   
-                            <div class="relative">
-                                <a href="#" title="" class="inline-block overflow-hidden rounded-[8px] group md:h-[230px] h-[200px] w-full">
-                                    <img class="object-cover w-full h-full group-hover:scale-125 transition-all duration-300 ease-in-out" src="https://static.vecteezy.com/system/resources/thumbnails/023/056/329/small_2x/programmer-people-working-laptops-or-smartphones-with-ai-artificial-intelligence-software-engineer-coding-on-laptop-computers-with-technology-icons-and-binary-code-big-data-ai-bot-digital-machine-photo.jpg" alt="" />
-                                </a>
-                                <div class="absolute top-2 left-2">
-                                    <span class="px-4 py-2 md:text-xs text-[12px] font-semibold tracking-widest text-gray-900 uppercase bg-white rounded-full"> Technology </span>
+                        @foreach($blogs as $blog)
+                            <div class="swiper-slide !h-auto">
+                                <div class="overflow-hidden bg-white rounded-[8px] shadow-lg h-full sm:p-2 p-1.5 border">
+                                    <div class="relative">
+                                        <a href="#" title="" class="inline-block overflow-hidden rounded-[8px] group md:h-[230px] h-[200px] w-full">
+                                            <!-- Ideally use $blog->image or so -->
+                                            <img class="object-cover w-full h-full group-hover:scale-125 transition-all duration-300 ease-in-out"
+                                                src="{{asset('storage/'.$blog->image)}}"
+                                                alt="{{ $blog->title }}">
+                                        </a>
+                                        <div class="absolute top-2 left-2">
+                                            <span class="px-4 py-2 md:text-xs text-[12px] font-semibold tracking-widest text-gray-900 uppercase bg-white rounded-full"> {{ $blog->title }} </span>
+                                        </div>
+                                    </div>
+                                    <div class="px-1 md:pt-2.5 pt-2">
+                                        <div class="block md:text-[14px] text-[13px] font-medium text-gray-800 uppercase">
+                                            <i class="fa-regular fa-calendar-days mr-0.5"></i>
+                                            <!-- Use actual date from model -->
+                                            {{ $blog->created_at->format('F d, Y') }}
+                                        </div>
+                                        <div class="md:mt-3 mt-2.5 md:text-lg sm:text-[17px] text-[16px] font-semibold">
+                                            <a href="#" title="" class="text-black hover:text-theme2 transition-all ease-in-out duration-300">
+                                                {{ $blog->title }}
+                                            </a>
+                                        </div>
+                                        <p class="md:mt-2.5 mt-2 md:text-[15px] text-[14px] text-gray-800 md:leading-[25px] leading-[23px] line-clamp-3">
+                                            {{ Str::limit($blog->description, 150) }}
+                                        </p>
+                                        <a href="#" title="" class="flex items-center justify-between pb-1 md:mt-3 mt-2.5 md:pt-3 pt-2.5 max-sm:text-[14px] border-t text-base font-medium text-gray-900 transition-all duration-500 hover:text-yellow-500">
+                                            Continue Reading
+                                            <svg class="size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="px-1 md:pt-2.5 pt-2">
-                                <div class="block md:text-[14px] text-[13px] font-medium text-gray-800 uppercase">
-                                    <i class="fa-regular fa-calendar-days mr-0.5"></i>
-                                    April 04, 2020
-                                </div>
-                                <div class="md:mt-3 mt-2.5 md:text-lg sm:text-[17px] text-[16px] font-semibold">
-                                    <a href="#" title="" class="text-black hover:text-theme2 transition-all ease-in-out duration-300"> Ho7 Tips to run your remote team faster and better.' </a>
-                                </div>
-                                <p class="md:mt-2.5 mt-2 md:text-[15px] text-[14px] text-gray-800 md:leading-[25px] leading-[23px] line-clamp-3"> ?? 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                                <a href="" title="" class="flex items-center justify-between pb-1 md:mt-3 mt-2.5 md:pt-3 pt-2.5 max-sm:text-[14px] border-t text-base font-medium text-gray-900 transition-all duration-500 hover:text-yellow-500">
-                                    Continue Reading
-                                    <svg class="size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="swiper-slide !h-auto">
-                        <div class="overflow-hidden bg-white rounded-[8px] shadow-lg h-full sm:p-2 p-1.5 border">   
-                            <div class="relative">
-                                <a href="#" title="" class="inline-block overflow-hidden rounded-[8px] group md:h-[230px] h-[200px] w-full">
-                                    <img class="object-cover w-full h-full group-hover:scale-125 transition-all duration-300 ease-in-out" src="https://static.vecteezy.com/system/resources/thumbnails/023/056/329/small_2x/programmer-people-working-laptops-or-smartphones-with-ai-artificial-intelligence-software-engineer-coding-on-laptop-computers-with-technology-icons-and-binary-code-big-data-ai-bot-digital-machine-photo.jpg" alt="" />
-                                </a>
-                                <div class="absolute top-2 left-2">
-                                    <span class="px-4 py-2 md:text-xs text-[12px] font-semibold tracking-widest text-gray-900 uppercase bg-white rounded-full"> Technology </span>
-                                </div>
-                            </div>
-                            <div class="px-1 md:pt-2.5 pt-2">
-                                <div class="block md:text-[14px] text-[13px] font-medium text-gray-800 uppercase">
-                                    <i class="fa-regular fa-calendar-days mr-0.5"></i>
-                                    April 04, 2020
-                                </div>
-                                <div class="md:mt-3 mt-2.5 md:text-lg sm:text-[17px] text-[16px] font-semibold">
-                                    <a href="#" title="" class="text-black hover:text-theme2 transition-all ease-in-out duration-300"> Ho7 Tips to run your remote team faster and better.' </a>
-                                </div>
-                                <p class="md:mt-2.5 mt-2 md:text-[15px] text-[14px] text-gray-800 md:leading-[25px] leading-[23px] line-clamp-3"> ?? 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                                <a href="" title="" class="flex items-center justify-between pb-1 md:mt-3 mt-2.5 md:pt-3 pt-2.5 max-sm:text-[14px] border-t text-base font-medium text-gray-900 transition-all duration-500 hover:text-yellow-500">
-                                    Continue Reading
-                                    <svg class="size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="swiper-slide !h-auto">
-                        <div class="overflow-hidden bg-white rounded-[8px] shadow-lg h-full sm:p-2 p-1.5 border">   
-                            <div class="relative">
-                                <a href="#" title="" class="inline-block overflow-hidden rounded-[8px] group md:h-[230px] h-[200px] w-full">
-                                    <img class="object-cover w-full h-full group-hover:scale-125 transition-all duration-300 ease-in-out" src="https://static.vecteezy.com/system/resources/thumbnails/023/056/329/small_2x/programmer-people-working-laptops-or-smartphones-with-ai-artificial-intelligence-software-engineer-coding-on-laptop-computers-with-technology-icons-and-binary-code-big-data-ai-bot-digital-machine-photo.jpg" alt="" />
-                                </a>
-                                <div class="absolute top-2 left-2">
-                                    <span class="px-4 py-2 md:text-xs text-[12px] font-semibold tracking-widest text-gray-900 uppercase bg-white rounded-full"> Technology </span>
-                                </div>
-                            </div>
-                            <div class="px-1 md:pt-2.5 pt-2">
-                                <div class="block md:text-[14px] text-[13px] font-medium text-gray-800 uppercase">
-                                    <i class="fa-regular fa-calendar-days mr-0.5"></i>
-                                    April 04, 2020
-                                </div>
-                                <div class="md:mt-3 mt-2.5 md:text-lg sm:text-[17px] text-[16px] font-semibold">
-                                    <a href="#" title="" class="text-black hover:text-theme2 transition-all ease-in-out duration-300"> Ho7 Tips to run your remote team faster and better.' </a>
-                                </div>
-                                <p class="md:mt-2.5 mt-2 md:text-[15px] text-[14px] text-gray-800 md:leading-[25px] leading-[23px] line-clamp-3"> ?? 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                                <a href="" title="" class="flex items-center justify-between pb-1 md:mt-3 mt-2.5 md:pt-3 pt-2.5 max-sm:text-[14px] border-t text-base font-medium text-gray-900 transition-all duration-500 hover:text-yellow-500">
-                                    Continue Reading
-                                    <svg class="size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div> 
+                            @endforeach
                 </div>
                 <div class="flex items-center justify-center gap-3 mt-5">
                     <button type="button"
@@ -116,7 +70,7 @@
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                         </svg>
-                        
+
                     </button>
                 </div>
             </div>

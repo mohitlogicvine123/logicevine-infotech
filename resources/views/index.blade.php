@@ -17,7 +17,7 @@
                     </span>
                 </div>
                 <div class="text-white lg:w-[60%] mx-auto md:leading-[31px] leading-[26px] md:text-[16px] sm:text-[15px] text-[14px] md:mt-4 mt-3">
-                    At Logicvine Infotech, we blend innovation with expertise to craft modern digital solutions tailored for your business. From responsive web design to dynamic web applications, our goal is to deliver quality-driven, scalable, and impactful results that help your brand grow and thrive in a competitive digital world.   
+                    At Logicvine Infotech, we blend innovation with expertise to craft modern digital solutions tailored for your business. From responsive web design to dynamic web applications, our goal is to deliver quality-driven, scalable, and impactful results that help your brand grow and thrive in a competitive digital world.
                 </div>
                 <div class="font-medium justify-center items-center md:mt-6 mt-5 w-full flex text-white text-center">
                     <label class="2xl:text-[75px] 3xl:text-[100px] lg:text-7xl sm:text-6xl text-5xl font-semibold">#1</label>
@@ -164,7 +164,7 @@
                                     development solutions prioritize performance, security, and user experience, ensuring your
                                     online
                                     presence stands out in a competitive market.
-                                </p>    
+                                </p>
                                 <div class="flex items-center justify-end md:mt-3 mt-2.5">
                                     <a href="{{ route('web-development') }}" class="text-[13px] font-medium bg-theme2 md:py-1.5 py-2.5 md:px-6 px-4 rounded-[7px] text-white transition-all duration-300 ease-in-out hover:bg-[#333]">
                                         <span class="">EXPLORE MORE<i class="fa-solid fa-arrow-right-long ml-3"></i></span>
@@ -256,7 +256,7 @@
                                         <div class="sm:text-[14px] text-[13px] font-semibold mt-2">Python</div>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -473,7 +473,7 @@
                                     <a href="{{ route('web-development') }}" class="text-[13px] font-medium bg-theme2 md:py-1.5 py-2.5 md:px-6 px-4 rounded-[7px] text-white transition-all duration-300 ease-in-out hover:bg-[#333]">
                                         <span class="">EXPLORE MORE<i class="fa-solid fa-arrow-right-long ml-3"></i></span>
                                     </a>
-                                </div>      
+                                </div>
                             </div>
                             <div class="flex gap-2.5 flex-wrap max-w-6xl md:pt-3 pt-2">
                                 <div class="text-[13px] transition-all ease-in-out duration-300 hover:-translate-y-2 px-4 py-1 text-white rounded-md bg-theme1 w-max backdrop-blur-sm text-nowrap">
@@ -565,10 +565,10 @@
                     </div>
                     <div class="md:mt-5 mt-3.5 flex flex-col md:gap-2.5 gap-2">
                         <div class="rounded-full bg-gradient-to-r t from-[#eab2083a] to-[#ffffff] px-4 py-[8px] md:text-[14px] text-[13px] font-medium">
-                            Industry-leading expertise  
+                            Industry-leading expertise
                         </div>
                         <div class="rounded-full bg-gradient-to-r t from-[#eab2083a] to-[#ffffff] px-4 py-[8px] md:text-[14px] text-[13px] font-medium">
-                            Latest technologies & frameworks  
+                            Latest technologies & frameworks
                         </div>
                         <div class="rounded-full bg-gradient-to-r t from-[#eab2083a] to-[#ffffff] px-4 py-[8px] md:text-[14px] text-[13px] font-medium">
                             Creative & result-driven approach
@@ -600,7 +600,7 @@
                             Dedicated support
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="relative md:p-6 p-4 rounded-xl bg-white shadow border group transition-all ease-in-out duration-300 hover:border-theme2">
                     <div class="bg-gradient-to-r from-theme2 to-[#eab20821] h-[4px] w-[110px] transition-all ease-in-out duration-300 group-hover:w-full"></div>
                     <div class="font-semibold mt-5 text-[18px]">
@@ -662,7 +662,7 @@
     <section class="md:mt-14 sm:mt-12 mt-10">
         <div class="container xl:px-[18px] md:px-4 px-3.5 mx-auto">
             <div class="heading-part">
-                <h2 class="text-black lg:text-[38px] md:text-[32px] sm:text-[26px] text-[22px] lg:leading-[50px] text-center font-semibold">How We 
+                <h2 class="text-black lg:text-[38px] md:text-[32px] sm:text-[26px] text-[22px] lg:leading-[50px] text-center font-semibold">How We
                 <span class="text-theme2">Work</span></h2>
                 <div class="relative bg-theme2 md:h-[6px] h-[5px] md:w-[100px] w-[90px] mx-auto rounded-[30px] md:mt-2 mt-[5px]">
                     <div class="absolute left-0 top-[-1.9px] bg-white h-[10px] w-[10px] rounded-full animate-bounce-custom"></div>
@@ -771,90 +771,14 @@
                 </p>
             </div>
             <div class="grid lg:grid-cols-7 md:grid-cols-5 sm:grid-cols-3 grid-cols-2 mt-7 gap-3">
-                <a href="" class="bg-white overflow-hidden block group px-3 py-4 rounded-xl border shadow group relative before:content-[''] before:left-0 before:bottom-0 before:w-full before:h-[70%] before:bg-white hover:before:bg-[#333] before:transition-all before:duration-500 before:ease-in-out before:absolute hover:before:h-full">
-                    <div class="md:size-[65px] size-[55px] overflow-hidden mx-auto bg-gray-200 flex items-center justify-center rounded-xl relative before:content-[''] before:left-[50%] before:top-0 before:w-0 before:h-full before:bg-white before:transition-all before:duration-[0.7s] before:ease-in-out before:absolute group-hover:before:w-full group-hover:before:left-0">
-                        <img src="{{asset('assets/img/e-commerse-development-icon.svg')}}" alt="Banking and Finance" class="h-[26px] relative">
-                    </div>
-                    <div class="text-center font-medium block md:text-[15px] text-[14px] md:mt-3.5 mt-3 relative transition-all duration-500 ease-in-out group-hover:text-white">Banking and Finance</div>
-                </a>
-                <a href="" class="bg-white overflow-hidden block group px-3 py-4 rounded-xl border shadow group relative before:content-[''] before:left-0 before:bottom-0 before:w-full before:h-[70%] before:bg-white hover:before:bg-[#333] before:transition-all before:duration-500 before:ease-in-out before:absolute hover:before:h-full">
-                    <div class="md:size-[65px] size-[55px] overflow-hidden mx-auto bg-gray-200 flex items-center justify-center rounded-xl relative before:content-[''] before:left-[50%] before:top-0 before:w-0 before:h-full before:bg-white before:transition-all before:duration-[0.7s] before:ease-in-out before:absolute group-hover:before:w-full group-hover:before:left-0">
-                        <img src="{{asset('assets/img/e-commerse-development-icon.svg')}}" alt="Banking and Finance" class="h-[26px] relative">
-                    </div>
-                    <div class="text-center font-medium block md:text-[15px] text-[14px] md:mt-3.5 mt-3 relative transition-all duration-500 ease-in-out group-hover:text-white">Banking and Finance</div>
-                </a>
-                <a href="" class="bg-white overflow-hidden block group px-3 py-4 rounded-xl border shadow group relative before:content-[''] before:left-0 before:bottom-0 before:w-full before:h-[70%] before:bg-white hover:before:bg-[#333] before:transition-all before:duration-500 before:ease-in-out before:absolute hover:before:h-full">
-                    <div class="md:size-[65px] size-[55px] overflow-hidden mx-auto bg-gray-200 flex items-center justify-center rounded-xl relative before:content-[''] before:left-[50%] before:top-0 before:w-0 before:h-full before:bg-white before:transition-all before:duration-[0.7s] before:ease-in-out before:absolute group-hover:before:w-full group-hover:before:left-0">
-                        <img src="{{asset('assets/img/e-commerse-development-icon.svg')}}" alt="Banking and Finance" class="h-[26px] relative">
-                    </div>
-                    <div class="text-center font-medium block md:text-[15px] text-[14px] md:mt-3.5 mt-3 relative transition-all duration-500 ease-in-out group-hover:text-white">Banking and Finance</div>
-                </a>
-                <a href="" class="bg-white overflow-hidden block group px-3 py-4 rounded-xl border shadow group relative before:content-[''] before:left-0 before:bottom-0 before:w-full before:h-[70%] before:bg-white hover:before:bg-[#333] before:transition-all before:duration-500 before:ease-in-out before:absolute hover:before:h-full">
-                    <div class="md:size-[65px] size-[55px] overflow-hidden mx-auto bg-gray-200 flex items-center justify-center rounded-xl relative before:content-[''] before:left-[50%] before:top-0 before:w-0 before:h-full before:bg-white before:transition-all before:duration-[0.7s] before:ease-in-out before:absolute group-hover:before:w-full group-hover:before:left-0">
-                        <img src="{{asset('assets/img/e-commerse-development-icon.svg')}}" alt="Banking and Finance" class="h-[26px] relative">
-                    </div>
-                    <div class="text-center font-medium block md:text-[15px] text-[14px] md:mt-3.5 mt-3 relative transition-all duration-500 ease-in-out group-hover:text-white">Banking and Finance</div>
-                </a>
-                <a href="" class="bg-white overflow-hidden block group px-3 py-4 rounded-xl border shadow group relative before:content-[''] before:left-0 before:bottom-0 before:w-full before:h-[70%] before:bg-white hover:before:bg-[#333] before:transition-all before:duration-500 before:ease-in-out before:absolute hover:before:h-full">
-                    <div class="md:size-[65px] size-[55px] overflow-hidden mx-auto bg-gray-200 flex items-center justify-center rounded-xl relative before:content-[''] before:left-[50%] before:top-0 before:w-0 before:h-full before:bg-white before:transition-all before:duration-[0.7s] before:ease-in-out before:absolute group-hover:before:w-full group-hover:before:left-0">
-                        <img src="{{asset('assets/img/e-commerse-development-icon.svg')}}" alt="Banking and Finance" class="h-[26px] relative">
-                    </div>
-                    <div class="text-center font-medium block md:text-[15px] text-[14px] md:mt-3.5 mt-3 relative transition-all duration-500 ease-in-out group-hover:text-white">Banking and Finance</div>
-                </a>
-                <a href="" class="bg-white overflow-hidden block group px-3 py-4 rounded-xl border shadow group relative before:content-[''] before:left-0 before:bottom-0 before:w-full before:h-[70%] before:bg-white hover:before:bg-[#333] before:transition-all before:duration-500 before:ease-in-out before:absolute hover:before:h-full">
-                    <div class="md:size-[65px] size-[55px] overflow-hidden mx-auto bg-gray-200 flex items-center justify-center rounded-xl relative before:content-[''] before:left-[50%] before:top-0 before:w-0 before:h-full before:bg-white before:transition-all before:duration-[0.7s] before:ease-in-out before:absolute group-hover:before:w-full group-hover:before:left-0">
-                        <img src="{{asset('assets/img/e-commerse-development-icon.svg')}}" alt="Banking and Finance" class="h-[26px] relative">
-                    </div>
-                    <div class="text-center font-medium block md:text-[15px] text-[14px] md:mt-3.5 mt-3 relative transition-all duration-500 ease-in-out group-hover:text-white">Banking and Finance</div>
-                </a>
-                <a href="" class="bg-white overflow-hidden block group px-3 py-4 rounded-xl border shadow group relative before:content-[''] before:left-0 before:bottom-0 before:w-full before:h-[70%] before:bg-white hover:before:bg-[#333] before:transition-all before:duration-500 before:ease-in-out before:absolute hover:before:h-full">
-                    <div class="md:size-[65px] size-[55px] overflow-hidden mx-auto bg-gray-200 flex items-center justify-center rounded-xl relative before:content-[''] before:left-[50%] before:top-0 before:w-0 before:h-full before:bg-white before:transition-all before:duration-[0.7s] before:ease-in-out before:absolute group-hover:before:w-full group-hover:before:left-0">
-                        <img src="{{asset('assets/img/e-commerse-development-icon.svg')}}" alt="Banking and Finance" class="h-[26px] relative">
-                    </div>
-                    <div class="text-center font-medium block md:text-[15px] text-[14px] md:mt-3.5 mt-3 relative transition-all duration-500 ease-in-out group-hover:text-white">Banking and Finance</div>
-                </a>
-                <a href="" class="bg-white overflow-hidden block group px-3 py-4 rounded-xl border shadow group relative before:content-[''] before:left-0 before:bottom-0 before:w-full before:h-[70%] before:bg-white hover:before:bg-[#333] before:transition-all before:duration-500 before:ease-in-out before:absolute hover:before:h-full">
-                    <div class="md:size-[65px] size-[55px] overflow-hidden mx-auto bg-gray-200 flex items-center justify-center rounded-xl relative before:content-[''] before:left-[50%] before:top-0 before:w-0 before:h-full before:bg-white before:transition-all before:duration-[0.7s] before:ease-in-out before:absolute group-hover:before:w-full group-hover:before:left-0">
-                        <img src="{{asset('assets/img/e-commerse-development-icon.svg')}}" alt="Banking and Finance" class="h-[26px] relative">
-                    </div>
-                    <div class="text-center font-medium block md:text-[15px] text-[14px] md:mt-3.5 mt-3 relative transition-all duration-500 ease-in-out group-hover:text-white">Banking and Finance</div>
-                </a>
-                <a href="" class="bg-white overflow-hidden block group px-3 py-4 rounded-xl border shadow group relative before:content-[''] before:left-0 before:bottom-0 before:w-full before:h-[70%] before:bg-white hover:before:bg-[#333] before:transition-all before:duration-500 before:ease-in-out before:absolute hover:before:h-full">
-                    <div class="md:size-[65px] size-[55px] overflow-hidden mx-auto bg-gray-200 flex items-center justify-center rounded-xl relative before:content-[''] before:left-[50%] before:top-0 before:w-0 before:h-full before:bg-white before:transition-all before:duration-[0.7s] before:ease-in-out before:absolute group-hover:before:w-full group-hover:before:left-0">
-                        <img src="{{asset('assets/img/e-commerse-development-icon.svg')}}" alt="Banking and Finance" class="h-[26px] relative">
-                    </div>
-                    <div class="text-center font-medium block md:text-[15px] text-[14px] md:mt-3.5 mt-3 relative transition-all duration-500 ease-in-out group-hover:text-white">Banking and Finance</div>
-                </a>
-                <a href="" class="bg-white overflow-hidden block group px-3 py-4 rounded-xl border shadow group relative before:content-[''] before:left-0 before:bottom-0 before:w-full before:h-[70%] before:bg-white hover:before:bg-[#333] before:transition-all before:duration-500 before:ease-in-out before:absolute hover:before:h-full">
-                    <div class="md:size-[65px] size-[55px] overflow-hidden mx-auto bg-gray-200 flex items-center justify-center rounded-xl relative before:content-[''] before:left-[50%] before:top-0 before:w-0 before:h-full before:bg-white before:transition-all before:duration-[0.7s] before:ease-in-out before:absolute group-hover:before:w-full group-hover:before:left-0">
-                        <img src="{{asset('assets/img/e-commerse-development-icon.svg')}}" alt="Banking and Finance" class="h-[26px] relative">
-                    </div>
-                    <div class="text-center font-medium block md:text-[15px] text-[14px] md:mt-3.5 mt-3 relative transition-all duration-500 ease-in-out group-hover:text-white">Banking and Finance</div>
-                </a>
-                <a href="" class="bg-white overflow-hidden block group px-3 py-4 rounded-xl border shadow group relative before:content-[''] before:left-0 before:bottom-0 before:w-full before:h-[70%] before:bg-white hover:before:bg-[#333] before:transition-all before:duration-500 before:ease-in-out before:absolute hover:before:h-full">
-                    <div class="md:size-[65px] size-[55px] overflow-hidden mx-auto bg-gray-200 flex items-center justify-center rounded-xl relative before:content-[''] before:left-[50%] before:top-0 before:w-0 before:h-full before:bg-white before:transition-all before:duration-[0.7s] before:ease-in-out before:absolute group-hover:before:w-full group-hover:before:left-0">
-                        <img src="{{asset('assets/img/e-commerse-development-icon.svg')}}" alt="Banking and Finance" class="h-[26px] relative">
-                    </div>
-                    <div class="text-center font-medium block md:text-[15px] text-[14px] md:mt-3.5 mt-3 relative transition-all duration-500 ease-in-out group-hover:text-white">Banking and Finance</div>
-                </a>
-                <a href="" class="bg-white overflow-hidden block group px-3 py-4 rounded-xl border shadow group relative before:content-[''] before:left-0 before:bottom-0 before:w-full before:h-[70%] before:bg-white hover:before:bg-[#333] before:transition-all before:duration-500 before:ease-in-out before:absolute hover:before:h-full">
-                    <div class="md:size-[65px] size-[55px] overflow-hidden mx-auto bg-gray-200 flex items-center justify-center rounded-xl relative before:content-[''] before:left-[50%] before:top-0 before:w-0 before:h-full before:bg-white before:transition-all before:duration-[0.7s] before:ease-in-out before:absolute group-hover:before:w-full group-hover:before:left-0">
-                        <img src="{{asset('assets/img/e-commerse-development-icon.svg')}}" alt="Banking and Finance" class="h-[26px] relative">
-                    </div>
-                    <div class="text-center font-medium block md:text-[15px] text-[14px] md:mt-3.5 mt-3 relative transition-all duration-500 ease-in-out group-hover:text-white">Banking and Finance</div>
-                </a>
-                <a href="" class="bg-white overflow-hidden block group px-3 py-4 rounded-xl border shadow group relative before:content-[''] before:left-0 before:bottom-0 before:w-full before:h-[70%] before:bg-white hover:before:bg-[#333] before:transition-all before:duration-500 before:ease-in-out before:absolute hover:before:h-full">
-                    <div class="md:size-[65px] size-[55px] overflow-hidden mx-auto bg-gray-200 flex items-center justify-center rounded-xl relative before:content-[''] before:left-[50%] before:top-0 before:w-0 before:h-full before:bg-white before:transition-all before:duration-[0.7s] before:ease-in-out before:absolute group-hover:before:w-full group-hover:before:left-0">
-                        <img src="{{asset('assets/img/e-commerse-development-icon.svg')}}" alt="Banking and Finance" class="h-[26px] relative">
-                    </div>
-                    <div class="text-center font-medium block md:text-[15px] text-[14px] md:mt-3.5 mt-3 relative transition-all duration-500 ease-in-out group-hover:text-white">Banking and Finance</div>
-                </a>
-                <a href="" class="bg-white overflow-hidden block group px-3 py-4 rounded-xl border shadow group relative before:content-[''] before:left-0 before:bottom-0 before:w-full before:h-[70%] before:bg-white hover:before:bg-[#333] before:transition-all before:duration-500 before:ease-in-out before:absolute hover:before:h-full">
-                    <div class="md:size-[65px] size-[55px] overflow-hidden mx-auto bg-gray-200 flex items-center justify-center rounded-xl relative before:content-[''] before:left-[50%] before:top-0 before:w-0 before:h-full before:bg-white before:transition-all before:duration-[0.7s] before:ease-in-out before:absolute group-hover:before:w-full group-hover:before:left-0">
-                        <img src="{{asset('assets/img/e-commerse-development-icon.svg')}}" alt="Banking and Finance" class="h-[26px] relative">
-                    </div>
-                    <div class="text-center font-medium block md:text-[15px] text-[14px] md:mt-3.5 mt-3 relative transition-all duration-500 ease-in-out group-hover:text-white">Banking and Finance</div>
-                </a>
+                 @foreach ($inds as $ind)
+                    <a href="" class="bg-white overflow-hidden block group px-3 py-4 rounded-xl border shadow group relative before:content-[''] before:left-0 before:bottom-0 before:w-full before:h-[70%] before:bg-white hover:before:bg-[#333] before:transition-all before:duration-500 before:ease-in-out before:absolute hover:before:h-full">
+                        <div class="md:size-[65px] size-[55px] overflow-hidden mx-auto bg-gray-200 flex items-center justify-center rounded-xl relative before:content-[''] before:left-[50%] before:top-0 before:w-0 before:h-full before:bg-white before:transition-all before:duration-[0.7s] before:ease-in-out before:absolute group-hover:before:w-full group-hover:before:left-0">
+                            <img src="{{asset('storage/'.$ind->image)}}" alt="{{$ind->title}}" class="h-[26px] relative">
+                        </div>
+                        <div class="text-center font-medium block md:text-[15px] text-[14px] md:mt-3.5 mt-3 relative transition-all duration-500 ease-in-out group-hover:text-white">{{$ind->title}}</div>
+                    </a>
+                 @endforeach
             </div>
         </div>
     </section>
@@ -863,7 +787,7 @@
     <!-- ***** blog section start ***** -->
     @include('front-common.common-blog')
     <!-- ***** blog section end ***** -->
-    
+
     <!-- ***** common contact form start ***** -->
     @include('front-common.form')
     <!-- ***** common contact form end ***** -->
