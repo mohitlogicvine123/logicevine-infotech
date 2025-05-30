@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Industries;
+use App\Models\blog;
 
 class HomeController extends Controller
 {
-    public function ind(){
-        $inds= Industries::all();
-        return view('index',compact('inds'));
+      public function blog(){
+        $blogs= blog::all();
+       return view('index', compact('blogs'));
     }
 }

@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- ***** page heading section start ***** -->
-    <section class="breadcrumb-section relative md:mb-28 mb-24 lg:pt-52 md:pt-48 pt-32 pb-10 bg-[url('/assets/img/breadcrumb-bg1.png'),_linear-gradient(180deg,_#121212_0%,_#121212_100%)] bg-cover bg-center">   
+    <section class="breadcrumb-section relative md:mb-28 mb-24 lg:pt-52 md:pt-48 pt-32 pb-10 bg-[url('/assets/img/breadcrumb-bg1.png'),_linear-gradient(180deg,_#121212_0%,_#121212_100%)] bg-cover bg-center">
         <div class="container xl:px-[18px] md:px-4 px-3.5 mx-auto">
             <div class="relative">
                 <div class="">
@@ -22,6 +22,13 @@
                     </a>
                 </div>
             </div>
+
+{{--
+    @foreach($carrer as $car)
+        <p>{{ $car->title }}</p>
+        <p>{{ $car->experience }}</p>
+    @endforeach --}}
+
         </div>
     </section>
     <!-- ***** page heading section end ***** -->

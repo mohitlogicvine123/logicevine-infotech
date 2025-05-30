@@ -3,11 +3,13 @@
 @section('content')
 <div class="overflow-x-auto mt-5">
     @if(session('success')) <p style="color:green">{{ session('success') }}</p> @endif
+        <a href="{{route('blog.create')}}" class="btn ">Add Blog</a>
     <table class="table-auto border-collapse w-full whitespace-nowrap text-left text-gray-500 dark:text-dark-text font-medium">
         <thead>
             <tr>
+
                 <th class="p-6 py-4 bg-[#F2F4F9] dark:bg-dark-card-two dk-border-one">Title</th>
-                <th class="p-6 py-4 bg-[#F2F4F9] dark:bg-dark-card-two dk-border-one">Description</th>
+                {{-- <th class="p-6 py-4 bg-[#F2F4F9] dark:bg-dark-card-two dk-border-one">Description</th> --}}
                 <th class="p-6 py-4 bg-[#F2F4F9] dark:bg-dark-card-two dk-border-one">image</th>
                 <th class="p-6 py-4 bg-[#F2F4F9] dark:bg-dark-card-two dk-border-one">Image-Alt</th>
                 <th class="p-6 py-4 bg-[#F2F4F9] dark:bg-dark-card-two dk-border-one">Category</th>
@@ -22,7 +24,7 @@
             @foreach ($blogs as  $blog)
             <tr>
                 <td class="p-6 py-4 dk-border-one">{{ $blog->title }}</td>
-                <td class="p-6 py-4 dk-border-one">{{ $blog->description }}</td>
+                {{-- <td class="p-6 py-4 dk-border-one">{{ $blog->description }}</td> --}}
                  <td>
                  <img src="{{asset('storage/'.$blog->image)}}" alt="ind Image" style="width:100px;">
                      <td class="p-6 py-4 dk-border-one">{{ $blog->imagealt }}</td>

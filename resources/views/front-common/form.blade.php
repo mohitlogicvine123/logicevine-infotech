@@ -1,3 +1,4 @@
+
 <section class="bg-gray-100/80 lg:pb-16 md:pb-14 pb-10 pt-6">
     <div class="container xl:px-[18px] md:px-4 px-3.5 mx-auto">
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-9">
@@ -70,32 +71,47 @@
                     Your Success Starts Here!
                 </div>
                 <div id="successMessage" class="alert alert-success hidden text-green-600 bg-green-500/25 border border-green-600 mt-4 rounded-[6px] p-2"></div>
-                <form id="contactForm" action="" method="POST">
+                <form id="contactForm" action="{{route('store')}}" method="POST">
                     @csrf
                     <div class="grid md:mt-6 mt-5 sm:grid-cols-2 grid-cols-1 md:gap-6 sm:gap-5 gap-3">
                         <div>
                             <label for="name" class="text-black text-[14px] font-medium">Full Name</label>
                             <input type="text" name="name" id="name" class="w-full border border-stone-300 outline-none text-sm p-2.5 rounded-md h-[47px] mt-1 focus:border-theme2" placeholder="Enter Your Name">
+                               @error('name')
+                              <p class="text-red-700 font-semibold text-sm mt-1">{{ $message }}</p>
+                             @enderror
                             <div id="nameError" class="alert text-red-600"></div>
                         </div>
                         <div>
                             <label for="email" class="text-black text-[14px] font-medium">Email address</label>
                             <input type="email" name="email" id="email" class="w-full border border-stone-300 outline-none text-sm p-2.5 rounded-md h-[47px] mt-1 focus:border-theme2" placeholder="Enter Email address">
+                                 @error('email')
+                              <p class="text-red-700 font-semibold text-sm mt-1">{{ $message }}</p>
+                             @enderror
                             <div id="emailError" class="alert text-red-600"></div>
                         </div>
                         <div>
                             <label for="phone" class="text-black text-[14px] font-medium">Phone number</label>
-                            <input type="tel" name="phone" id="phone" class="w-full border border-stone-300 outline-none text-sm p-2.5 rounded-md h-[47px] mt-1 focus:border-theme2" placeholder="Enter Phone number">
+                            <input type="tel" name="number" id="phone" class="w-full border border-stone-300 outline-none text-sm p-2.5 rounded-md h-[47px] mt-1 focus:border-theme2" placeholder="Enter Phone number">
+                                 @error('number')
+                              <p class="text-red-700 font-semibold text-sm mt-1">{{ $message }}</p>
+                             @enderror
                             <div id="phoneError" class="alert text-red-600"></div>
                         </div>
                         <div>
                             <label for="cmpname" class="text-black text-[14px] font-medium">Company name</label>
-                            <input type="text" name="cmpname" id="cmpname" class="w-full border border-stone-300 outline-none text-sm p-2.5 rounded-md h-[47px] mt-1 focus:border-theme2" placeholder="Enter Company Name">
+                            <input type="text" name="company_name" id="cmpname" class="w-full border border-stone-300 outline-none text-sm p-2.5 rounded-md h-[47px] mt-1 focus:border-theme2" placeholder="Enter Company Name">
+                                 @error('company_name')
+                              <p class="text-red-700 font-semibold text-sm mt-1">{{ $message }}</p>
+                             @enderror
                             <div id="cmpnameError" class="alert text-red-600"></div>
                         </div>
                         <div class="sm:col-span-2">
                             <label for="message" class="text-black text-[14px] font-medium">Message</label>
                             <textarea name="message" id="message" class="w-full border border-stone-300 outline-none text-sm p-2.5 rounded-md sm:h-32 h-28 mt-1 focus:border-theme2" placeholder="Enter Your Message"></textarea>
+                                 @error('message')
+                              <p class="text-red-700 font-semibold text-sm mt-1">{{ $message }}</p>
+                             @enderror
                             <div id="messageError" class="alert text-red-600"></div>
                         </div>
                     </div>

@@ -27,7 +27,7 @@
                       @forelse ($data as $item)
                         <div class="pb-14">
                             <div class="size-full rounded-md">
-                                <img src="{{ asset('gallery').'/'.$item->image }}" alt="">
+                                <img src="{{ asset('blog').'/'.$item->image }}" alt="">
                             </div>
                             <div class="flex items-center gap-3 py-4 border-b flex-wrap ">
                                 <div class="flex items-center gap-1 shrink-0"><span
@@ -48,7 +48,7 @@
                                         href="" class="inline-block text-sm font-semibold text-slate-500">ADMIN</a>
                                 </div>
                                 <div class="flex items-center gap-1 shrink-0">
-                                
+
                                   <span
                                         class="inline-block size-5 text-slate-700"><svg stroke="currentColor" fill="none"
                                             stroke-width="1" viewBox="0 0 24 24" stroke-linecap="round"
@@ -63,7 +63,7 @@
                                         class="inline-block text-sm font-semibold text-slate-500">COMMENTS (0)</a>
                                 </div>
                                 <div class="flex items-center gap-1 shrink-0">
-                                  
+
                                   <span
                                         class="inline-block size-5 text-slate-700"><svg stroke="currentColor"
                                             fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="100%"
@@ -103,7 +103,7 @@
                                           class="group-hover/btn:-translate-x-7  duration-300 w-7 h-[2px] bg-slate-950"></span>
                                       <span class="group-hover/btn:-translate-x-7 duration-300"> read more</span></button>
                               </div> --}}
-                        </div>                        
+                        </div>
                     @empty
                     @endforelse
                         {{-- <div class="pb-14">
@@ -308,7 +308,7 @@
                             <div class="flex  flex-nowrap gap-5 pt-4">
                                 <div class="w-1/3 !shrink-0"><a href="#"
                                         class="inline-block aspect-[1/.6] *:object-cover *:size-full">
-                                        <img src="{{ asset('assets/img/blog-4.jpg') }}" alt="">
+                                        <img src="{{asset('storage/'.$item->image)}}" alt="">
                                     </a></div>
                                 <div class="w-9/12">
                                     <div class=""><a class="text-lg font-medium leading-[100%]" href="">How

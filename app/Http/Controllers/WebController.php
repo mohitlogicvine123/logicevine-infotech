@@ -2,49 +2,70 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
+use App\Models\Career;
+use App\Models\Gallery;
+use App\Models\Industries;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class WebController extends Controller
 {
-  public function index(){
-    $data = DB::table('blogs')->get();
-      return view('index' ,compact('data'));
+    public function index() {
+        $blogs = Blog::all();
+        return view('index', compact('blogs'));
     }
-    public function about(){
-      return view('about-us');
+
+    public function ind() {
+        $inds = Industries::all(); // get all ind in front end
+        $blogs = Blog::latest()->take(3)->get();// gat all blog in front end
+         return view('index', compact('inds', 'blogs'));
     }
-    public function gallery(){
-      return view('gallery');
+
+    public function about() {
+        return view('about-us');
     }
-    public function bloglist(){
-      $data = DB::table('blogs')->get();
-      return view('blog' , compact('data'));
+
+    public function gallery() {
+        $image= Gallery::all(); // get gallery in front end
+        return view('gallery',compact('image'));
     }
-      public function blogdeatils(){
-        return view('blog-deatil');
+
+    public function bloglist() {
+        $blogs = Blog::all();
+        return view('blog', compact('blogs'));
     }
-      public function contact(){
+
+    public function blogdeatils() {
+        $data= Blog::all(); // get blogdetails page in front end 
+        return view('blog-detail',compact('data'));
+    }
+
+    public function contact() {
         return view('contact-us');
     }
-    public function carrier()
-    {
-        return view('carrier');
+
+    public function carrier() {
+        $carrer = Career::all();
+        return view('carrier', compact('carrer'));
     }
-    public function webdevelopment(){
-        $data = DB::table('blogs')->get();
-        return view('web-development',compact('data'));
+
+    public function webdevelopment() {
+        $blogs = Blog::all();
+        return view('web-development', compact('blogs'));
     }
-    public function mobileappdevelopment(){
-        $data = DB::table('blogs')->get();
-        return view('mobile-app-development',compact('data'));
+
+    public function mobileappdevelopment() {
+        $blogs = Blog::all();
+        return view('mobile-app-development', compact('blogs'));
     }
-    public function softwaredevelopment(){
-        $data = DB::table('blogs')->get();
-        return view('software-development' ,compact('data'));
+
+    public function softwaredevelopment() {
+        $blogs = Blog::all();
+        return view('software-development', compact('blogs'));
     }
-    public function ecommerce(){
-        $data = DB::table('blogs')->get();
-        return view('ecommerce-development',compact('data'));
+
+    public function ecommerce() {
+        $blogs = Blog::all();
+        return view('ecommerce-development', compact('blogs'));
     }
-  }
+}
